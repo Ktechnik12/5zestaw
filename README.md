@@ -1,51 +1,44 @@
-# Program do rysowania figur na kanwie
+# Program rysujący na płótnie
 
-Ten program umożliwia rysowanie różnych figur geometrycznych na kanwie oraz zapisywanie ich do pliku.
+Program rysujący różne figury na płótnie oraz generujący cień na podstawie dostępnego światła.
+
+## Opis
+
+Ten program umożliwia rysowanie różnych figur, takich jak kwadraty, koła i trójkąty, na płótnie o określonych wymiarach. Dodatkowo, można określić położenie źródła światła, które generuje cień dla figur na płótnie.
 
 ## Wymagania
 
-Aby uruchomić program, musisz mieć zainstalowany kompilator języka C++ oraz bibliotekę standardową.
+Aby uruchomić program, wymagane jest posiadanie kompilatora C++ oraz biblioteki standardowej C++. Program wykorzystuje bibliotekę `iostream` do obsługi wejścia/wyjścia, `fstream` do operacji na plikach, `vector` do przechowywania figur, `string` do manipulacji łańcuchami znaków, `sstream` do parsowania danych wejściowych oraz `cmath` do obliczeń matematycznych.
 
-## Konfiguracja
+## Instrukcje
 
-Program wymaga podania pliku konfiguracyjnego jako argument przy uruchamianiu. Plik konfiguracyjny powinien zawierać następujące informacje:
+1. Skompiluj program, używając kompilatora C++.
+2. Uruchom program, podając nazwę pliku konfiguracyjnego jako argument.
+3. Plik konfiguracyjny powinien zawierać informacje o wymiarach płótna, nazwie pliku wyjściowego, symbolu pustego miejsca na płótnie oraz figurach do narysowania.
+4. Figury mogą być kwadratami, kołami lub trójkątami. Każda figura jest określona przez typ figury, współrzędne jej środka, rozmiar oraz symbol do rysowania.
+5. Opcjonalnie, można określić również położenie źródła światła, które generuje cień dla figur na płótnie.
+6. Po zakończeniu program wyświetli rysunek na standardowym wyjściu oraz, jeśli podano nazwę pliku wyjściowego, zapisze rysunek do pliku.
 
-- `canvas_width`: szerokość kanwy w pikselach
-- `canvas_height`: wysokość kanwy w pikselach
-- `output_filename`: nazwa pliku, do którego zostanie zapisana kanwa
-- `empty_symbol`: symbol reprezentujący puste miejsce na kanwie
+## Przykład użycia
 
-Ponadto, w pliku konfiguracyjnym można zdefiniować figury do narysowania na kanwie. Każda figura powinna mieć określony typ, współrzędne x i y, rozmiar oraz symbol reprezentujący figurę.
+`$ ./program plik_konfiguracyjny.txt`
 
-## Uruchomienie
+## Format pliku konfiguracyjnego
 
-Aby uruchomić program, użyj następującej komendy w terminalu:
+Plik konfiguracyjny powinien mieć następujący format:
 
-./program nazwa_pliku_konfiguracyjnego <nazwa_pliku_konfiguracyjnego>
+- canvas_width *szerokość_płótna*
+- canvas_height *wysokość_płótna*
+- output_filename *nazwa_pliku_wyjściowego*
+- empty_symbol *symbol_pustego_miejsca*
+- figure *typ_figury x y rozmiar symbol*
+- light *x y symbol_oznaczający_miejsce symbol_światła*
 
-## Przykładowy plik konfiguracyjny
+## Typy figur
 
-Poniżej przedstawiam przykład pliku konfiguracyjnego:
-
-Plik konfiguracyjny dla programu rysującego figury na kanwie
-canvas_width 30
-canvas_height 20
-output_filename output.txt
-empty_symbol ' '
-
-figure square 3 5 4 #
-figure circle 15 10 2 *
-figure triangle3 10 14 6 *
-figure triangle4 10 14 6 *
-figure triangle1 10 14 6 *
-figure triangle2 10 14 6 *
-
-
-W powyższym przykładzie definiujemy kanwę o szerokości 30 pikseli i wysokości 20 pikseli. Wyjściowy plik zostanie zapisany jako `output.txt`, a puste miejsca na kanwie będą reprezentowane przez spacje (` `).
-
-Następnie definiujemy figury: kwadrat, koło oraz cztery rodzaje trójkątów. Każda figura ma określone współrzędne środka, rozmiar oraz symbol.
-
-## Wyjście
-
-Po uruchomieniu programu zostanie wygenerowana kanwa z narysowanymi figurami, która zostanie wyświetlona w konsoli. Ponadto, kanwa zostanie zapisana do pliku o nazwie i lokalizacji podanej w pliku konfiguracyjnym.
-
+- `square * x y rozmiar symbol*` - generuje kwadrat o środku w punkcie `*x*`, `*y*`; długości boku `*rozmiar*`. Jest on narysowany znakiem `*symbol*`.
+- `circle * x y promien symbol*` - generuje koło o środku w punkcie `*x*`, `*y*`; promieniu `*promien*`. Jest on narysowany znakiem `*symbol*`.
+- `triangle1 * x y rozmiar symbol*` - generuje prawy trójkąt rosnący o środku w punkcie `*x*`, `*y*`; rozimarze `*rozmiar*`. Jest on narysowany znakiem `*symbol*`.
+- `triangle2 * x y rozmiar symbol*` - generuje prawy trójkąt malejący o środku w punkcie `*x*`, `*y*`; rozimarze `*rozmiar*`. Jest on narysowany znakiem `*symbol*`.
+- `triangle3 * x y rozmiar symbol*` - generuje lewy trójkąt rosnący o środku w punkcie `*x*`, `*y*`; rozimarze `*rozmiar*`. Jest on narysowany znakiem `*symbol*`.
+- `triangle4 * x y rozmiar symbol*` - generuje lewy trójkąt malejący o środku w punkcie `*x*`, `*y*`; rozimarze `*rozmiar*`. Jest on narysowany znakiem `*symbol*`.
