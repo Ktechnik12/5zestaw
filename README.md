@@ -27,18 +27,18 @@ Aby uruchomić program, wymagane jest posiadanie kompilatora C++ oraz biblioteki
 
 Plik konfiguracyjny powinien mieć następujący format:
 
-- canvas_width *szerokość_płótna*
-- canvas_height *wysokość_płótna*
-- output_filename *nazwa_pliku_wyjściowego*
-- empty_symbol *symbol_pustego_miejsca*
-- figure *typ_figury x y rozmiar symbol*
-- light *x y symbol_oznaczający_miejsce symbol_światła*
+- canvas_width *`szerokość_płótna`*
+- canvas_height *`wysokość_płótna`*
+- output_filename *`nazwa_pliku_wyjściowego`*
+- empty_symbol *`symbol_pustego_miejsca`*
+- figure *`typ_figury x y rozmiar symbol`*
+- light *`x y symbol_oznaczający_miejsce symbol_światła`*
 
 ## Typy figur
 
-- `square `*` x y rozmiar symbol`* - generuje kwadrat o środku w punkcie *`x`*, *`y`*; długości boku *`rozmiar`*. Jest on narysowany znakiem *`symbol`*.
-- `circle `*` x y promien symbol`* - generuje koło o środku w punkcie *`x`*, *`y`*; promieniu *`promien`*. Jest on narysowany znakiem *`symbol`*.
-- `triangle1 * x y rozmiar symbol`* - generuje prawy trójkąt rosnący o środku w punkcie *`x`*, *`y`*; rozimarze *`rozmiar`*. Jest on narysowany znakiem *`symbol`*.
-- `triangle2 * x y rozmiar symbol`* - generuje prawy trójkąt malejący o środku w punkcie *`x`*, *`y`*; rozimarze *`rozmiar`*. Jest on narysowany znakiem *`symbol`*.
-- `triangle3 * x y rozmiar symbol`* - generuje lewy trójkąt rosnący o środku w punkcie *`x`*, *`y`*; rozimarze *`rozmiar`*. Jest on narysowany znakiem *`symbol`*.
-- `triangle4 * x y rozmiar symbol`* - generuje lewy trójkąt malejący o środku w punkcie *`x`*, *`y`*; rozimarze *`rozmiar`*. Jest on narysowany znakiem *`symbol`*.
+- *`square x y rozmiar symbol`* - generuje kwadrat o środku w punkcie *`x`*, *`y`*; długości boku *`rozmiar`*. Jest on narysowany znakiem *`symbol`*.
+- *`circle x y promien symbol`* - generuje koło o środku w punkcie *`x`*, *`y`*; promieniu *`promien`*. Jest on narysowany znakiem *`symbol`*.
+- *`triangle1 x y rozmiar symbol`* - generuje prawy trójkąt rosnący o środku w punkcie *`x`*, *`y`*; rozimarze *`rozmiar`*. Jest on narysowany znakiem *`symbol`*.
+- *`triangle2 x y rozmiar symbol`* - generuje prawy trójkąt malejący o środku w punkcie *`x`*, *`y`*; rozimarze *`rozmiar`*. Jest on narysowany znakiem *`symbol`*.
+- *`triangle3 x y rozmiar symbol`* - generuje lewy trójkąt rosnący o środku w punkcie *`x`*, *`y`*; rozimarze *`rozmiar`*. Jest on narysowany znakiem *`symbol`*.
+- *`triangle4 x y rozmiar symbol`* - generuje lewy trójkąt malejący o środku w punkcie *`x`*, *`y`*; rozimarze *`rozmiar`*. Jest on narysowany znakiem *`symbol`*.
