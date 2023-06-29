@@ -47,26 +47,26 @@ Plik konfiguracyjny powinien mieć następujący format:
 
 Przykłady narysowanych trójkątów:
 
-1. `triangle1 x y rozmiar symbol`:
-* o
-oo
+1. `triangle1 x y rozmiar symbol`:<br>
+*o<br>
+oo<br>
 ooo*
 
-2. `triangle2 x y rozmiar symbol`:
-*ooo
-oo
-o
+2. `triangle2 x y rozmiar symbol`:<br>
+*ooo<br>
+oo<br>
+o<br>
 
 3. `triangle3 x y rozmiar symbol`
-*   o
-  oo
- ooo
+<br>*   o<br>
+  oo<br>
+ ooo<br>
 oooo
 
-4. `triangle4 x y rozmiar symbol`
-*oooo
- ooo
-  oo
+4. `triangle4 x y rozmiar symbol`<br>
+*oooo<br>
+ ooo<br>
+  oo<br>
    o
 
 
