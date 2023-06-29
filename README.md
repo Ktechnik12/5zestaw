@@ -27,12 +27,12 @@ Aby uruchomić program, wymagane jest posiadanie kompilatora C++ oraz biblioteki
 
 Plik konfiguracyjny powinien mieć następujący format:
 
-- canvas_width *`szerokość_płótna`*
-- canvas_height *`wysokość_płótna`*
-- output_filename *`nazwa_pliku_wyjściowego`*
-- empty_symbol *`symbol_pustego_miejsca`*
-- figure *`typ_figury x y rozmiar symbol`*
-- light *`x y symbol_oznaczający_miejsce symbol_światła`*
+- *`canvas_width`* szerokość_płótna`*
+- *`canvas_height`* wysokość_płótna
+- *`output_filename`* nazwa_pliku_wyjściowego
+- *`empty_symbol`* symbol_pustego_miejsca
+- *`figure typ_figury x y rozmiar symbol`*
+- *`light x y symbol_oznaczający_miejsce symbol_światła`*
 
 ## Typy figur
 
