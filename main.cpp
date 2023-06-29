@@ -5,6 +5,7 @@
 #include <sstream>
 #include <cmath>
 
+//klasa do obslugi canvy
 class Canvas {
 protected:
     int width;
@@ -80,12 +81,14 @@ public:
     }
 };
 
+//klasa do obslugi figur
 class Figure {
 public:
     virtual ~Figure() {}
     virtual void draw(Canvas& canvas) = 0;
 };
 
+//kwadratu
 class Square : public Figure {
 private:
     int centerX;
@@ -108,6 +111,7 @@ public:
     }
 };
 
+//kolo
 class Circle : public Figure {
 private:
     int centerX;
@@ -137,6 +141,7 @@ private:
     }
 };
 
+//trojkat 1
 class Triangle1 : public Figure {
 private:
     int centerX;
@@ -159,6 +164,7 @@ public:
     }
 };
 
+//trojkat 2
 class Triangle2 : public Figure {
 private:
     int centerX;
@@ -181,6 +187,7 @@ public:
     }
 };
 
+//trojkat 3
 class Triangle3 : public Figure {
 private:
     int centerX;
@@ -203,6 +210,7 @@ public:
     }
 };
 
+//trojkat 4
 class Triangle4 : public Figure {
 private:
     int centerX;
@@ -225,6 +233,7 @@ public:
     }
 };
 
+//klasa do cienia
 class Light {
 private:
     int posX;
@@ -287,6 +296,7 @@ private:
     };
 };
 
+//main
 int main(int argc, char** argv) {
     if (argc < 2) {
         std::cout << "Podaj nazwę pliku konfiguracyjnego jako argument." << std::endl;

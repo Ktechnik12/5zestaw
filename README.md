@@ -42,3 +42,33 @@ Plik konfiguracyjny powinien mieć następujący format:
 - *`triangle2 x y rozmiar symbol`* - generuje prawy trójkąt malejący o środku w punkcie *`x`*, *`y`*; rozimarze *`rozmiar`*. Jest on narysowany znakiem *`symbol`*.
 - *`triangle3 x y rozmiar symbol`* - generuje lewy trójkąt rosnący o środku w punkcie *`x`*, *`y`*; rozimarze *`rozmiar`*. Jest on narysowany znakiem *`symbol`*.
 - *`triangle4 x y rozmiar symbol`* - generuje lewy trójkąt malejący o środku w punkcie *`x`*, *`y`*; rozimarze *`rozmiar`*. Jest on narysowany znakiem *`symbol`*.
+
+## Trójkąty:
+
+Przykłady narysowanych trójkątów:
+
+1. `triangle1 x y rozmiar symbol`:
+* o
+oo
+ooo*
+
+2. `triangle2 x y rozmiar symbol`:
+*ooo
+oo
+o
+
+3. `triangle3 x y rozmiar symbol`
+*   o
+  oo
+ ooo
+oooo
+
+4. `triangle4 x y rozmiar symbol`
+*oooo
+ ooo
+  oo
+   o
+
+
+
+
